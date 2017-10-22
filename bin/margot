@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+
+import sys
+import os
+curr_dir = os.path.dirname(os.path.abspath(__file__))
+par_dir = os.path.dirname(curr_dir)
+sys.path.append(par_dir)
+from src import margot1 as s1
+
+if __name__=='__main__':
+    obj = s1.Calc()
+    print(obj.add(2, 4))  # 6

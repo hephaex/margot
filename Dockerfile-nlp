@@ -1,0 +1,4 @@
+    ldconfig && \
+    apt-get clean && \
+    apt-get autoremove && \
+    rm -rf /var/lib/apt/lists/* /tmp/*  ~/*
